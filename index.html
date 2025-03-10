@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR GLB Model</title>
-    <!-- A-Frame Library für 3D-Anzeige -->
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <!-- AR.js Library für Augmented Reality -->
-    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Modell</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style="margin: 0; overflow: hidden;">
-    <!-- AR.js-Szene -->
-    <a-scene embedded arjs>
-        <!-- Marker für das 3D-Modell (ein AR Marker) -->
-        <a-marker preset="hiro">
-            <!-- Dein 3D-Modell im GLB-Format -->
-            <a-entity gltf-model="url(https://drive.google.com/file/d/1YhDUwz8eGs1ibre8zVJJYIp0sqpng9iF/view?usp=drive_link)" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
-        </a-marker>
-        <!-- Kamera für die AR-Szene -->
-        <a-entity camera></a-entity>
-    </a-scene>
+  <a-scene embedded arjs>
+    <!-- Das 3D-Modell (ExplodedviewG45-07.glb) -->
+    <a-entity gltf-model="url(ExplodedviewG45-07.glb)" scale="0.5 0.5 0.5" position="0 1 -5"></a-entity>
+  </a-scene>
 </body>
 </html>
